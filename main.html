@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Nested Table
+        </title>
+
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
-    </table>
-  </body>
+
+    </head>
+    <body>
+        <!-- Parent Table -->
+        <table  style="width: 100%; height: 100%" border="1">
+          <tr>
+              <td>
+                <!-- Nested Table 2 -->
+                <table border="1" align="center">
+                    <thead>
+                      <tr> 
+                        <th colspan = "2">Nested Table 2</th> </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th>Column 1</th>
+                         <th>Column 2</th>
+                        </tr>
+                       <tr> 
+                        <td >why</td> 
+                        <td>not</td>
+                       </tr>
+                    </tbody>
+                  </table>
+              </td>
+              <td>
+                  <!-- Nested Table 1 -->
+                  <table align="center" border="1">
+                      <thead><tr> <th>Nested Table 1</th> </tr></thead>
+                      <tbody>
+                      <tr>
+                          <td>
+                              <ul>
+                                  <li>lemon</li>
+                                  <li>lime</li>
+                                  <li>are same?</li>
+                              </ul>
+                          </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <!-- Nested Table 3 -->
+                  <table border="1" align="center">
+                    <thead>
+                      <tr>
+                          <th colspan = "2" align="center">Nested Table 3</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <td><a href = "https://www.google.com/">Nested Table</a> </td><td>Nested and tough</td>
+                      </tr>
+                      </tbody>
+                  </table>
+              </td>
+              <td>
+                  <!-- Nested Table 4 -->
+                  <table border="1" align="center">
+                     <thead> <tr><th>Nested Table 4</th></tr></thead>
+                     <tbody> <tr><td style="color: white; background-color: black; text-align: center;">HTML</td></tr></tbody>
+                  </table>
+              </td>
+          </tr>
+      </table>
+    </body>
 </html>
